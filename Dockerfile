@@ -1,7 +1,10 @@
-FROM node:12.11
+FROM node:12.11-stretch
 
-# Also exposing VSCode debug ports
-EXPOSE 8000 9929 9230
+EXPOSE 8000
+
+RUN apt-get update \
+    && apt-get -y install git \
+    && apt-get clean
 
 RUN git config --global user.email "mail@mail.com"
 RUN git config --global user.name "Gatsby developer"
@@ -12,8 +15,11 @@ RUN mkdir -p /site
 WORKDIR /site
 VOLUME /site
 
+RUN passwd -d root
+
 COPY ./entrypoint.sh /
 RUN chmod +x /entrypoint.sh
+
 ENTRYPOINT ["/entrypoint.sh"]
 
 
