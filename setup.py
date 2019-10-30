@@ -14,7 +14,7 @@ setuptools.setup(
     url="https://github.com/mjroson/gatsby-docker",
     packages=setuptools.find_packages(),
     entry_points={
-        'console_scripts': ['gatsbyjs=gatsbyjs'],
+        'console_scripts': ['gatsbyjs=gatsbyjs.run:main'],
     },
     classifiers=[
         "Programming Language :: Python :: 3",
