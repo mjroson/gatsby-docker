@@ -63,7 +63,7 @@ else
     check_project
   fi
 
-  exec "$@"
+  exec $@
 
 fi
 
