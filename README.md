@@ -82,3 +82,8 @@ gatsbyjs new https://github.com/justinformentin/gatsby-v2-tutorial-starter
 # chose npm
 gatsbyjs develop
 ```
+
+# Next?
+
+- Support for use more params with gatsby's commands
+- Support for all operative systems (now only linux support)
