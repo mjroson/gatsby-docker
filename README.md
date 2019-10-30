@@ -62,7 +62,7 @@ docker run -it --rm -v $(pwd)/site:/site -p 8000:8000 aripalo/gatsby-docker <YOU
 
 For example to install a new NPM-module: `docker run -it --rm -v $(pwd)/site:/site aripalo/gatsby-docker yarn add gatsby-transformer-yaml`
 
-## Install gatsby-client and use this docker like the oficial gatsby-cli
+## Install gatsby-client and use this docker like to the oficial gatsby-cli
 
 ```sh
 sudo pip3 install git+https://github.com/mjroson/gatsby-docker
@@ -73,7 +73,7 @@ sudo pip3 install git+https://github.com/mjroson/gatsby-docker
 - Installed docker and can use docker with your current user
 - Python 3 and pip3 installed
 
-###### Create and run new project Ex.
+###### Create and run new project with gatsby-client. Ex.
 
 ```sh
 mkdir blog
@@ -85,5 +85,5 @@ gatsbyjs develop
 
 # Next?
 
-- Support for use more params with gatsby's commands
-- Support for all operative systems (now only linux support)
+- Support for use more params to gatsby's commands
+- Support for all operative systems (currently only supports linux)
