@@ -1,0 +1,11 @@
+version: "3"
+services:
+  web:
+    image: mjroson/gatsbyjs
+    command: gatsby develop -H 0.0.0.0
+    ports:
+      - "8000:8000"
+      - "9929:9929"
+      - "9230:9230"
+    volumes:
+      - .:/site
