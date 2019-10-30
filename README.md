@@ -61,3 +61,24 @@ docker run -it --rm -v $(pwd)/site:/site -p 8000:8000 aripalo/gatsby-docker <YOU
 ```
 
 For example to install a new NPM-module: `docker run -it --rm -v $(pwd)/site:/site aripalo/gatsby-docker yarn add gatsby-transformer-yaml`
+
+## Install gatsby-client and use this docker like the oficial gatsby-cli
+
+```sh
+sudo pip3 install git+https://github.com/mjroson/gatsby-docker
+```
+
+##### Requirements:
+
+- Installed docker and can use docker with your current user
+- Python 3 and pip3 installed
+
+###### Create and run new project Ex.
+
+```sh
+mkdir blog
+cd blog
+gatsbyjs new https://github.com/justinformentin/gatsby-v2-tutorial-starter
+# chose npm
+gatsbyjs develop
+```
